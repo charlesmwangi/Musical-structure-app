@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/now_playingLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/textView1"
+        style="@style/textView1"
+        android:id="@+id/textView1"
+         />
+
+    <TextView
+        android:text="@string/textView"
+        style="@style/textView"
+        android:id="@+id/textView"
+        android:textColor="@color/textView"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/ImageView"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:text="@string/forward"
+        android:id="@+id/forward_button"
+        style="@style/forwardButton"
+        />
+    <Button
+        android:text="@string/pause"
+        android:id="@+id/pause_button"
+        style="@style/pauseButton"
+         />
+
+    <Button
+        android:text="@string/play"
+        android:id="@+id/play_button"
+        style="@style/playButton"
+         />
+    <Button
+        android:text="@string/rewind"
+        android:id="@+id/rewind_button"
+        style="@style/rewindButton"
+         />
+
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/seekBar"
+        />
+
+    <TextView
+        android:text="@string/start"
+        android:id="@+id/textView2"
+        style="@style/textView2"
+        />
+
+    <TextView
+        android:text="@string/start"
+        android:id="@+id/textView3"
+        style="@style/textView3"
+        />
+
+    <TextView
+        android:text="@string/song"
+        android:id="@+id/textView4"
+        style="@style/textView4"
+         />
+
+</RelativeLayout>

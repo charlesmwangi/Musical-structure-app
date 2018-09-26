@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Style for a tab that displays tabs -->
+    <style name="Tab" parent="Widget.Design.TabLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
+        <item name="tabIndicatorColor">@color/tabIndicator</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="android:textColor">@color/tabsTextColor</item>
+    </style>
+    <!-- Style for a main activity linear layout -->
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="view_pager" parent="Widget.Design.TabLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!-- Style for a main Now_playing activity -->
+    <style name="now_playingLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="textView1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="textView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/textView1</item>
+    </style>
+    <style name="ImageView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/textView</item>
+    </style>
+    <style name="forwardButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignTop">@+id/play_button</item>
+        <item name="android:layout_toRightOf">@+id/play_button</item>
+        <item name="android:layout_toEndOf">@+id/play_button</item>
+    </style>
+    <style name="pauseButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignRight">@+id/rewind_button</item>
+        <item name="android:layout_alignStart">@+id/seekBar</item>
+
+    </style>
+    <style name="playButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignTop">@+id/pause_button</item>
+        <item name="android:layout_toRightOf">@+id/pause_button</item>
+        <item name="android:layout_toEndOf">@+id/pause_button</item>
+    </style>
+    <style name="rewindButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+    <style name="seekBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/textView1</item>
+        <item name="android:layout_alignStart">@+id/textView1</item>
+        <item name="android:layout_alignRight">@+id/textView1</item>
+        <item name="android:layout_alignEnd">@+id/textView1</item>
+        <item name="android:layout_above">@+id/play_button</item>
+    </style>
+    <style name="textView2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_above">@+id/seekBar</item>
+        <item name="android:layout_alignLeft">@+id/textView</item>
+        <item name="android:layout_alignStart">@+id/rewind_button</item>
+    </style>
+    <style name="textView3">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_above">@+id/seekBar</item>
+        <item name="android:layout_alignRight">@+id/forward_button</item>
+        <item name="android:layout_alignEnd">@+id/forward_button</item>
+    </style>
+    <style name="textView4">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_alignBaseline">@+id/textView2</item>
+        <item name="android:layout_alignBottom">@+id/textView2</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+</resources>

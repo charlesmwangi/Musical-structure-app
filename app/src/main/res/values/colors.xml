@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#546E7A</color>
+    <color name="colorPrimaryDark">#37474F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Category tab text appearance -->
+    <color name="categoryTab">#A8A19E</color>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4A312A</color>
+    <!-- Tab selected text color -->
+    <color name="tabSelectedTextColor">@android:color/white</color>
+    <!--Tab selcted indicator color -->
+    <color name="tabIndicator">@android:color/white</color>
+    <color name="tabsTextColor">#A8A19E</color>
+    <!--TextView text color -->
+    <color name="textView">#FF7AFF24</color>
+</resources>
